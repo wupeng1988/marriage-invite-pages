@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="width">
+<meta name="viewport" content="width=320, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no">
+<title>欢迎来参加我们的婚礼</title>
+<meta name="description" content="欢迎来参加我们的婚礼，么么哒～" />
+<script type="text/javascript" src="js/init.js?10"></script>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=tViLTQCYX9tvg6xBuT0wy80A"></script>
+
+<link type="text/css" rel="stylesheet" href="css/index.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css?4" />
+</head>
+<body>
+<!--	<div class="hidden"><img src="http://192.168.6.51/views/Coder/img/share_icon.jpg" /></div> -->
+	<div class="hidden"><img src="img/share_icon.jpg" /></div>
+	<img id="loadingImgId" src="img/loading.gif" /> 
+	<article id="phone_cover" class="hidden">
+		<div class="page page1">
+		    <audio class="tips" src="img/message.mp3" preload="auto"></audio>
+		    <div class="content">
+		        <div class="date">
+		            <p class="time">00:35</p>
+		            <p class="week">10月24日 星期六</p>
+		        </div>
+		        <ul class="message">
+		            <li class="hidden">
+		                <p calss="title">微信<em> 现在</em></p>
+		                <p class="info">国之栋梁：duang duang duang，有大事宣布 ！</p>
+		            </li>
+		        </ul>
+		        <div class="footer"></div>
+		    </div>
+		    <audio class="unlock" src="img/unlock.mp3" preload="auto"></audio>
+		</div>
+		<div class="page page2 hidden">
+		    <audio class="tips" src="img/message.mp3" preload="auto"></audio>
+		    <div class="con">
+		        <ul class="content clearfix">
+		            <li class="clearfix">
+		                <p class="mTime"><span>昨天 晚上10:23</span></p>
+		                <div class="photo img2"></div>
+		                <div>
+		                    <p class="username"><!-- 运维组-Tony --></p>
+		                    <p class="mess">啥子事儿啊赶紧说！耽误我卖徐福记</p>
+		                </div>
+		            </li>
+		            <li class="clearfix">
+		                <div class="photo img3"></div>
+		                <div>
+		                    <p class="username"><!-- 运维组-Tony --></p>
+		                    <p class="mess">听说霞霞要嫁人了？</p>
+		                </div>
+		            </li>
+		            <li class="clearfix">
+		                <p class="mTime"><span>凌晨12:35</span></p>
+		                <div class="photo img4"></div>
+		                <div>
+		                    <p class="username"><!-- 运维组-Tony --></p>
+		                    <p class="mess">跟谁结啊，我去，还是原来那个吴鹏？</p>
+		                </div>
+		            </li>
+		            <li class="clearfix hidden">
+		                <div class="photo img5"></div>
+		                <div>
+		                    <p class="username"><!-- 运维组-Tony --></p>
+		                    <p class="mess">是哒是哒，我接到过电话了</p>
+		                </div>
+		            </li>
+		            <li class="clearfix hidden">
+		                <div class="photo img1"></div>
+		                <div>
+		                    <p class="username"><!-- 运维组-Tony --></p>
+		                    <p class="mess">你们猜对了，准备接电话噢</p>
+		                </div>
+		            </li>
+		            <li class="clearfix hidden">
+		                <div class="photo img1"></div>
+		                <div>
+		                    <p class="username"><!-- 运维组-Tony --></p>
+		                    <p class="mess">一个个通知你们</p>
+		                </div>
+		            </li>
+		            <li class="clearfix hidden">
+		                <div class="photo img6"></div>
+		                <div>
+		                    <p class="username"><!-- 运维组-Tony --></p>
+		                    <p class="mess">看把你能耐滴，要上天是咋滴</p>
+		                </div>
+		            </li>
+		            <li class="clearfix hidden">
+		                <div class="photo img7"></div>
+		                <div>
+		                    <p class="username"><!-- 运维组-Tony --></p>
+		                    <p class="mess">靠，这么快</p>
+		                </div>
+		            </li>
+		            <li class="clearfix hidden">
+		                <div class="photo img6"></div>
+		                <div>
+		                    <p class="username"><!-- 运维组-Mix --></p>
+		                    <p class="mess">我靠我靠我靠</p>
+		                </div>
+		            </li>
+		            <li class="clearfix hidden">
+		                <div class="photo img8"></div>
+		                <div>
+		                    <p class="username"><!-- 运维组-Tony --></p>
+		                    <p class="mess">妈呀，电话来了</p>
+		                </div>
+		            </li>
+		        </ul>
+		    </div>
+		</div>
+		<div class="page page3 hidden">
+			<audio class="call" src="img/call.mp3" loop="-1" preload="auto"></audio>
+			<div class="empty"></div>
+			<div class="phonePhoto"></div>
+			<p class="name iphone_nickname"></p>
+			<p class="phone">手机</p>
+			<div class="answer clearfix">
+				<div class="answerLight"></div>
+				<div class="answerLight"></div>
+				<div class="answerLight"></div>
+				<div class="answerBtn"></div>
+			</div>
+			<div class="hangup clearfix">
+				<div class="hangupBtn"></div>
+			</div>
+		</div>
+		<div class="page page4 hidden">
+			<p class="username iphone_nickname"><!-- 老大 --></p>
+			<p class="time">00:00</p>
+			<div class="hangupBtn">
+				<audio src="img/voice.mp3" preload="auto" > </audio>
+			</div>
+			<audio class="dudu" src="img/dudu.mp3" preload="auto"></audio>
+		</div>
+	</article>
+
+	<!-- 主页 -->
+	<article id="s_main" class="hidden">
+		
+		<!-- 背景音乐 -->
+		<div id="audio_player" class="rotate"><audio id="audio_main_bg" style="diplay:none;" loop="loop" preload="auto" src="img/song.mp3"></audio></div>
+		<!-- 主内容 -->
+		<div id="s_main_content">
+			<div id="s_cover_photo" class="cur s_img_wrap">
+				<img id="s_cover_photo_img" />
+				<a href="http://www.baidu.com">design & made : singledog.org</a>
+				<div id="cover_comment_wrp">
+					<div id="cover_comment_inner_out">
+						<div id="cover_comment_inner">
+							<div id="cover_comment1">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 时间 -->
+			<div id="s_time">
+				<div class="clearfix content_below_ul">
+					<div id="s_time_banner"><span class="s_img_wrap"><img id="s_time_img" /></span></div>
+					<div>
+						<p class="white_text">沉浸在幸福中的我们</p>
+						<p class="white_text">谨定于</p>
+						<p class="yellow_text" id="s_time_time"><!-- 婚礼时间 --></p>
+						<div id="s_time_name" class="clearfix">
+							<div>
+								<p id="s_time_xinlang" class="yellow_text large_text"><!-- 新郎名 --></p>
+								<p class="white_text">新郎</p>
+							</div>
+							<div>
+								<img id="s_heart" src="img/heart.png" />
+							</div>
+							<div>
+								<p id="s_time_xinniang" class="yellow_text large_text"><!-- 新娘名 --></p>
+								<p class="white_text">新娘</p>
+							</div>
+						</div>
+						<br />
+						<p class="white_text">席设：</p>
+						<p class="white_text text_auto_break"><span id="location"><!-- 酒店名 --></span></p>
+						<p class="white_text" id="location_address"><!-- 酒店地址 --></p>
+						<p class="white_text">恭请光临</p>
+						<br />
+						<p class="red_text">一份心情随岁月滋长</p>
+						<p class="red_text">今天我们互定终生</p>
+						<p class="red_text">期待您带着祝福</p>
+						<p class="red_text">见证我们这一幸福时刻</p>
+						<p class="red_text middle_text">酒后一定不能开车！！</p>
+						<br /><br /><br />
+					</div>
+				</div>
+			</div>
+			<!-- 相册-->
+			<div id="s_album">
+				<ul id="s_album_ul" class="clearfix content_below_ul">
+					
+				</ul>
+				
+			</div>
+			
+			<!-- 评论 -->
+			<div id="s_comment">
+				<div id="s_comment_banner" class="clearfix">
+					<div id="s_comment_xl" class="s_img_wrap" s_img_load_src="">
+						<img />
+						<p class="white_text">新郎：<span id="s_comment_xl_tel"><!-- 新郎电话 --></span></p>
+					</div>
+					<div id="s_comment_xn" class="s_img_wrap" s_img_load_src="">
+						<img />
+						<p class="white_text">新娘：<span id="s_comment_xn_tel"><!-- 新娘电话 --></span></p>
+					</div>
+				</div>
+				<form id="s_comment_form">
+				<br />
+                    <table id="s_comment_table">
+                        <tr>
+                            <td class="col1">姓名</td>
+                            <td class="col2"><input id="guestname" name="guestname" type="text" placeholder="请输入您的姓名" ></td>
+                        </tr>
+    
+                        <tr>
+                            <td class="col1">出席人数</td>
+                            <td class="col2">
+                                 <select id="reply" name="guestnum" >
+                                    <option value="0">无法出席</option>
+                                    <option  value="1">1人出席</option>
+                                    <option selected value="2">2人出席</option>
+                                    <option value="3">3人出席</option>
+                                    <option value="4">4人出席</option>
+                                    <option value="5">5人出席</option>
+                                    <option value="6">6人出席</option>
+                                    <option value="7">7人出席</option>
+                                    <option value="8">8人出席</option>
+                                    <option value="9">9人出席</option>
+                                    <option value="10">10人出席</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col1">默认祝福</td>
+                            <td class="col2">
+                                <select id="J_content_select" style="width:100%">
+									<option value="">选择默认祝福</option>
+                                    <option value="新婚快乐，早生贵子!">新婚快乐，早生贵子!</option>
+                                    <option value="敬祝百年好合永结同心!">敬祝百年好合永结同心！</option>
+                                    <option value="天作之合，鸾凤和鸣。">天作之合，鸾凤和鸣。 </option>
+                                    <option value="天生才子佳人配，只羡鸳鸯不羡仙。">天生才子佳人配，只羡鸳鸯不羡仙。</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col1">内容</td>
+                            <td class="col2">
+								 <textarea name="bookcontent" id="J_content" style="height: 50px;width:90%"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <div id="comment_add_btn" log="0">发表祝福</div>
+                    
+                    <!-- 评论列表 -->
+                    <div class="back_list" id="back_list">
+
+                    </div>
+                    
+                    
+    
+                </form>
+
+			</div>
+			
+			<!-- 地图 -->
+			<div id="s_map_wrp">
+				<div class="s_map"><div id="s_map_xl"></div></div>
+				<hr />
+				<div class="s_map"><div id="s_map_xn"></div></div>
+			</div>
+		</div>
+
+		<!-- 菜单 -->
+		<ul id="s_main_menu">
+			<li class="cur">封面</li>
+			<li> 时间</li>
+			<li>相册</li>
+			<li>评论</li>
+			<li>地图</li>
+		</ul>
+	</article>
+	
+	<div id='slider' class='swipe'>
+	  <div id="swipe_wrap" class='swipe-wrap'>
+	  </div>
+	  <span id="slider_close"></span>
+	</div>
+
+		<!-- 评论模板 -->
+		<script id="back_template" type="text/template"> 
+				<div class="back">
+		        	<div class="back_title">
+		            	<div class="head"></div>
+		                <span class="guest"><%=item.name%></span>
+		                <span class="time"><%=item.createTime%></span>
+		            </div>
+	                <div class="content"><%=item.content%></div>
+	            </div>
+		</script> 
+
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/underscore-min.js"></script>
+	<script type="text/javascript" src="js/PerLoader.js?18"></script>
+	<script type="text/javascript" src="js/scroll_comment.js?26"></script>
+	<script type="text/javascript" src="js/ImgManager.js"></script>
+	<script type="text/javascript" src="js/swipe.min.js"></script>
+	<script type="text/javascript" src="js/common.js?3"></script>
+	<script type="text/javascript" src="js/app.js?12"></script>
+	<script type="text/javascript" src="js/index0.js?1"></script>
+
+</body>
+</html>
